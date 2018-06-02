@@ -1,0 +1,31 @@
+
+<div>
+  <nz-table #basicTable [nzData]="dataSet" [nzLoading]="loding">
+  <thead>
+    <tr>
+      <th>序号</th>
+      <th>视频编号</th>
+      <th>播放数</th>
+      <th>弹幕数</th>
+      <th>评论数</th>
+      <th>收藏数</th>
+      <th>硬币数</th>
+      <th>分享数</th>
+      <th>视频名称</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data;let i = index">
+      <td>{{i+1}}</td>
+      <td>{{data.v_aid}}</td>
+      <td>{{data.v_view}}</td>
+      <td>{{data.v_danmaku}}</td>
+      <td>{{data.v_reply}}</td>
+      <td>{{data.v_favorite}}</td>
+      <td>{{data.v_coin}}</td>
+      <td>{{data.v_share}}</td>
+      <td><a href={{data.v_href}} target="_Blank">{{data.v_name}}</a></td>
+    </tr>
+  </tbody>
+</nz-table>
+</div>
