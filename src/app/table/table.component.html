@@ -1,6 +1,6 @@
 
-<div>
-  <nz-table #basicTable [nzData]="dataSet" [nzLoading]="loding">
+<div class={{this.conn}}>
+  <nz-table #basicTable [nzData]="dataSet" [nzLoading]="loding" class="v_coin">
   <thead>
     <tr>
       <th>序号</th>
@@ -12,6 +12,7 @@
       <th>硬币数</th>
       <th>分享数</th>
       <th>视频名称</th>
+      <th>标签</th>
     </tr>
   </thead>
   <tbody>
@@ -24,7 +25,9 @@
       <td>{{data.v_favorite}}</td>
       <td>{{data.v_coin}}</td>
       <td>{{data.v_share}}</td>
+      
       <td><a href={{data.v_href}} target="_Blank">{{data.v_name}}</a></td>
+      <td>{{data.v_tags}}</td>
     </tr>
   </tbody>
 </nz-table>

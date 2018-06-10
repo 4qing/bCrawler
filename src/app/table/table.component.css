@@ -1,0 +1,24 @@
+.v_view{
+    background: url("/assets/v_view_wc.jpg") no-repeat;
+    background-size: contain;
+}
+.v_share{
+    background: url("/assets/v_share_wc.jpg") no-repeat;
+    background-size: contain;
+}
+.v_coin{
+    background: url("/assets/v_coin_wc.jpg") no-repeat;
+    background-size: contain;
+}
+.v_favorite{
+    background: url("/assets/v_favorite_wc.jpg") no-repeat;
+    background-size: contain;
+}
+.v_reply {
+    background: url("/assets/v_reply_wc.jpg") no-repeat;
+    background-size: contain;
+}
+.v_danmaku{
+    background: url("/assets/v_danmaku_wc.jpg") no-repeat;
+    background-size: contain;
+}
